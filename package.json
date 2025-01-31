@@ -8,5 +8,9 @@
   },
   "keywords": ["whatsapp", "key", "bot"],
   "author": "RerezzOfficial",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "readline": "^1.3.0"
+  }
 }
