@@ -4,8 +4,11 @@ const path = require('path');
 // Key yang benar (disimpan langsung dalam kode)
 const correctKey = 'VREDEN 2025';
 
+// Menentukan path file key.txt secara default di dalam kode
+const keyFilePath = path.join(__dirname, 'key.txt');
+
 // Fungsi untuk memeriksa key sebelum memulai bot
-function checkKey(keyFilePath) {
+async function checkKey() {
     // Memeriksa apakah file key ada
     if (fs.existsSync(keyFilePath)) {
         const storedKey = fs.readFileSync(keyFilePath, 'utf8').trim();
