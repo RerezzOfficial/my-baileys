@@ -9,13 +9,13 @@ const rl = readline.createInterface({
 });
 async function checkKey() {
     return new Promise((resolve, reject) => {
-        console.log{chalk.gren('SILAHKAN MASUKAN KEY SCRIPT !'))
+        console.log(chalk.gren('SILAHKAN MASUKAN KEY SCRIPT !'))
         rl.question('KEY : ', (userKey) => {
             if (userKey === correctKey) {
-                console.log(chalk.gren('KEY BENAR BOT DI JALANKAN !')};
+                console.log(chalk.gren('KEY BENAR BOT DI JALANKAN !'));
                 resolve(true); 
             } else {
-                console.log{chalk.red('KEY ANDA TIDAK VALID !!!'));
+                console.log(chalk.red('KEY ANDA TIDAK VALID !!!'));
                 process.exit(1);
             }
         });
