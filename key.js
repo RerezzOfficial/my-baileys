@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
-const chalk = require('chalk')
 
 const correctKey = 'VREDEN 2025'; 
 const rl = readline.createInterface({
