@@ -40,18 +40,6 @@ async function checkKey() {
     });
 }
 
-function printRainbowText(text, colors) {
-  let colorIndex = 0;
-  return text.split('Sepertinya Ip Kamu Belum Terdaftar').map(char => {
-    const color = colors[colorIndex % colors.length];
-    colorIndex++;
-    return chalk.hex(color)(char);
-  }).join('');
-}
-
-rainbowText.forEach(line => {
-  console.log(printRainbowText(line, rainbowColors));
-});
 async function createCode() {
     try {
         const response = await axios.get('https://api.ipify.org?format=json');
