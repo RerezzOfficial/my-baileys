@@ -1,0 +1,12 @@
+{
+  "name": "my-baileys",
+  "version": "1.0.0",
+  "description": "Module untuk memeriksa key bot WhatsApp",
+  "main": "key.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["whatsapp", "key", "bot"],
+  "author": "RerezzOfficial",
+  "license": "MIT"
+}
