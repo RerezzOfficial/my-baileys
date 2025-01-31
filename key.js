@@ -12,7 +12,7 @@ async function checkKey(userKey) {
         return true; // Key valid
     } else {
         console.log('Key tidak valid! Bot dihentikan.');
-        process.exit(); // Hentikan proses bot
+        process.exit(1); // Hentikan proses bot dengan status error
     }
 }
 
